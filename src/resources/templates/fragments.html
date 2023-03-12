@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+
+<head th:fragment="head">
+
+    <!-- Bootstrap stylesheets and script -->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{/css/javacontinued.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+
+    <title th:text="'JavaContinued' + ${title == null ? '' : ' :: ' + title}">Java, Continued</title>
+</head>
+
+<body>
+
+<div th:fragment="page-header" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a th:href="@{/}" class="navbar-brand">Navigation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/add}">Nav Item 1</a></li>
+                <li><a th:href="@{/logout}">Nav Item 2</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div th:fragment="body" class="body-template">
+    <div class="container">
+        <div class="centeredTable">
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="2">Chapter${chapter}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="leftTable">
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="2">Keywords</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Keyword</td>
+                    <td>Keyword</td>
+                    <td>Keyword</td>
+                </tr>
+                <tr>
+                    <td>Keyword</td>
+                    <td>Keyword</td>
+                    <td>Keyword</td>
+                </tr>
+                <tr>
+                    <td>Keyword</td>
+                    <td>Keyword</td>
+                    <td>Keyword</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="rightTable">
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="2">Main Takeaways, or Core Concepts</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notes">
+            <h3 class="header-paragraph">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </h3>
+        </div>
+
+</div>
+</body>
+</html>
